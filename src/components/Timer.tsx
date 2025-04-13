@@ -1,7 +1,7 @@
 import { TimerButtons } from './TimerButtons'
 import { useTimer } from '../hooks/useTimer'
 
-function formatTime(totalSeconds: number): string {
+const formatTime = (totalSeconds: number): string => {
   const minutes = Math.floor(totalSeconds / 60)
   const seconds = totalSeconds % 60
   const paddedMinutes = String(minutes).padStart(2, '0')

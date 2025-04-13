@@ -1,7 +1,7 @@
 import './App.css'
 import { Timer } from './components/Timer'
 
-export function App() {
+export const App = () => {
   return (
     <div className="App">
       <Timer />
